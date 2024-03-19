@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Self-Assessment</h1>
+    <form>
+        <fieldset>
+            <legend>How many hours of sleep do you get per night? (0 - 12 hours)</legend>
+            <input type="range" name="sleep-hours" id="sleep-hours" min="0" max="12" step="1" value="7">
+            <label for="sleep-hours">Hours of Sleep</label>
+        </fieldset>
+        <fieldset>
+            <legend>How many times a week do you exercise? (0 - 7 times)</legend>
+            <input type="range" name="exercise-frequency" id="exercise-frequency" min="0" max="7" step="1" value="3">
+            <label for="exercise-frequency">Times per Week</label>
+        </fieldset>
+        <fieldset>
+            <legend>How often do you feel stressed? (0 - 10 times per week)</legend>
+            <input type="range" name="stress-frequency" id="stress-frequency" min="0" max="10" step="1" value="4">
+            <label for="stress-frequency">Times per Week</label>
+        </fieldset>
+        <fieldset>
+            <legend>How consistent are you on your work per day?</legend>
+            <input type="range" name="work-consistency" id="work-consistency" min="0" max="10" step="1" value="5">
+            <label for="work-consistency">Scale of Consistency</label>
+        </fieldset>
+        <fieldset>
+            <legend>Do you have any fear associated with the past?</legend>
+            <input type="range" name="past-fear" id="past-fear" min="0" max="10" step="1" value="0">
+            <label for="past-fear">Intensity of Fear</label>
+        </fieldset>
+        <input type="button" value="Finish" onclick="location.href='SIGNUPsucessful.html';">
+    </form>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #6d4ef9;
+    color: white;
+    padding: 10px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+fieldset {
+    width: 50%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #6d4ef9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="button"] {
+    background-color: #6d4ef9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin-top as needed */
+}
+</style>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #6d4ef9;
+        color: #333;
+      }
+      .quiz-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .question {
+        margin-bottom: 20px;
+      }
+      .options {
+        list-style-type: lower-alpha;
+        padding-left: 20px;
+      }
+      .options li {
+        margin-bottom: 10px;
+      }
+      .result {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      button {
+        background-color: #6d4ef9;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #6d4ef9;
+      }
+      input[type="button"] {
+    background-color: #6d4ef9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin-top as needed */
+}
+input[type="button"] {
+    background-color: #6d4ef9;
+    color: white;
+    position: absolute;
+    left: 520px;
+    bottom: 200;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin-top as needed */
+}
+H1{
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <!-- Questions -->
+      <!-- Question 1 -->
+      <h1>Phase 2 :VIKRAMADITYA</h1>
+      <div class="question" id="question1">
+        <p>1. How are you in Studies ?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="Paris" /> Good</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="London" /> Average</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="Berlin" /> Not Bad</label
+              >
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="Rome" /> Intelligent</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 2 -->
+      <div class="question" id="question2">
+        <p>2. How Much Time you Will spend to your family (in hours)? </p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="Tokyo" /> 1-2 Hr Per day</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="Beijing" /> More than 5 Hrs</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="Seoul" /> Less than you expect</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="Bangkok" /> I want But Workload Bounded Me</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 3 -->
+      <div class="question" id="question3">
+        <p>3. What do you like to do in your Free time?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="Pacific" /> Painting</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="Atlantic" />
+                Playing Sports</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="Indian" /> Reading</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="Arctic" /> Travelling</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 4 -->
+      <div class="question" id="question4">
+        <p>4. Where You like to Travel Most?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="Shakespeare" />
+                Mountains</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="Hemingway" />
+                Beaches</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="Dickens" /> Forest Camping</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="Twain" /> Devotional Visit</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 5 -->
+      <div class="question" id="question5">
+        <p>5. How is Yor Relation With Your Loved Once?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label><input type="radio" name="q5" value="Yen" /> Good</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="Euro" /> Not Bad</label>
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="Dollar" /> Friendly</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="Pound" /> Casual</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 6 -->
+      <div class="question" id="question6">
+        <p>6. Would You like to play with Animals ?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q6" value="Leonardo da Vinci" />
+                Mostly yes</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q6" value="Pablo Picasso" /> 
+                Hesitate to touch them</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q6" value="Vincent van Gogh" />
+                Sharing Very Good Bond with Them</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q6" value="Michelangelo" />
+                Not even try yet</label
+              >
+              <input type="button" value="START SHUSHRUT" onclick="location.href='phase3.html';">
+
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

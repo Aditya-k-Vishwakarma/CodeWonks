@@ -1,0 +1,71 @@
+/* Centering the card form on the screen */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6d4ef9;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Styling for form elements */
+.card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .input-box {
+    margin-bottom: 15px;
+}
+
+.card input[type="text"],
+.card input[type="number"],
+.card select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.card .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6d4ef9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #6d4ef9;
+}
+input[type="button"] {
+    background-color: #6d4ef9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin-top as needed */
+}
+input[type="button"] {
+    background-color: #6d4ef9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin-top as needed */
+      }

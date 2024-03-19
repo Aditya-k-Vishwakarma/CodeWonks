@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <h2>Quiz</h2>
+
+    <form id="quizForm">
+        <div>
+            <p>1. What is the capital of France?</p>
+            <input type="radio" id="q1_option1" name="q1" value="option1">
+            <label for="q1_option1">London</label><br>
+            <input type="radio" id="q1_option2" name="q1" value="option2">
+            <label for="q1_option2">Paris</label><br>
+            <input type="radio" id="q1_option3" name="q1" value="option3">
+            <label for="q1_option3">Berlin</label><br>
+            <input type="radio" id="q1_option4" name="q1" value="option4">
+            <label for="q1_option4">Madrid</label><br>
+        </div>
+
+        <!-- Repeat similar structure for other questions -->
+        <!-- Remember to change IDs and names accordingly -->
+
+        <!-- Question 2 -->
+        <div>
+            <p>2. What is the capital of Japan?</p>
+            <input type="radio" id="q2_option1" name="q2" value="option1">
+            <label for="q2_option1">Tokyo</label><br>
+            <input type="radio" id="q2_option2" name="q2" value="option2">
+            <label for="q2_option2">Beijing</label><br>
+            <input type="radio" id="q2_option3" name="q2" value="option3">
+            <label for="q2_option3">Seoul</label><br>
+            <input type="radio" id="q2_option4" name="q2" value="option4">
+            <label for="q2_option4">Bangkok</label><br>
+        </div>
+
+        <!-- Repeat this structure for remaining questions -->
+
+        <button href="test2.html">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Handle form submission here
+            // You can retrieve the selected options using document.querySelector or other methods
+            // Calculate score, show results, etc.
+        });
+    </script>
+</body>
+</html>

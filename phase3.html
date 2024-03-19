@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz with Audio and Graphs</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #6d4ef9;
+        color: #333;
+      }
+      .quiz-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color:white;
+      }
+      .quiz-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .question {
+        margin-bottom: 10px; /* Reduce the margin between questions */
+      }
+      .audio-container {
+        margin-bottom: 10px; /* Reduce the margin between audio and options */
+      }
+      canvas {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        margin: 5px 0; /* Reduce the margin between graphs */
+      }
+      .options {
+        margin-top: 5px; /* Reduce the margin between options and question */
+      }
+      button {
+        background-color: #ffffff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #ffffff;
+      }
+      input[type="button"] {
+    background-color: #6d4ef9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin-top as needed */
+      }
+      h1{
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+
+
+
+
+
+  </head>
+  <body>
+    
+    <div class="quiz-container">
+     
+      <div class="quiz-card">
+        <h1>Phase 3: SHUSHRUT</h1>
+        <!-- Question 1 with audio -->
+        <div class="question" id="question1">
+          <p>1. Listen to the audio and answer the question:</p>
+          <div class="audio-container">
+            <audio controls>
+              <source src="m1.mpeg" type="audio/mpeg" />
+            </audio>
+            <canvas id="graph1"></canvas>
+          </div>
+          <div class="options">
+            <label
+              ><input type="radio" name="q1" value="option1" /> Option 1</label
+            >
+            <canvas class="option-graph" id="graph1-option1"></canvas>
+
+            <label
+              ><input type="radio" name="q1" value="option2" /> Option 2</label
+            >
+            <canvas class="option-graph" id="graph1-option2"></canvas>
+
+            <!-- Option 3 with graph -->
+            <label
+              ><input type="radio" name="q1" value="option3" /> Option 3</label
+            >
+            <canvas class="option-graph" id="graph1-option3"></canvas>
+
+            <!-- Option 4 with graph -->
+            <label
+              ><input type="radio" name="q1" value="option4" /> Option 4</label
+            >
+            <canvas class="option-graph" id="graph1-option4"></canvas>
+          </div>
+        </div>
+
+        <!-- Question 2 with audio and graphs -->
+        <div class="question" id="question2">
+          <p>2. Listen to the audio and answer the question:</p>
+          <div class="audio-container">
+            <audio controls>
+              <source
+                src="m2.mpeg"
+                type="audio/mpeg"
+              />
+              Your browser does not support the audio element.
+            </audio>
+            <canvas id="graph2"></canvas>
+          </div>
+          <div class="options">
+            <!-- Option 1 with graph -->
+            <label
+              ><input type="radio" name="q2" value="option1" /> Option 1</label
+            >
+            <canvas class="option-graph" id="graph2-option1"></canvas>
+
+            <!-- Option 2 with graph -->
+            <label
+              ><input type="radio" name="q2" value="option2" /> Option 2</label
+            >
+            <canvas class="option-graph" id="graph2-option2"></canvas>
+
+            <!-- Option 3 with graph -->
+            <label
+              ><input type="radio" name="q2" value="option3" /> Option 3</label
+            >
+            <canvas class="option-graph" id="graph2-option3"></canvas>
+
+            <!-- Option 4 with graph -->
+            <label
+              ><input type="radio" name="q2" value="option4" /> Option 4</label
+            >
+            <canvas class="option-graph" id="graph2-option4"></canvas>
+          </div>
+        </div>
+        <input type="button" value="START VYAS" onclick="location.href='phase4.html';">
+
+        
+      </div>
+    </div>
+
+    <script>
+      // Function to generate random data for the graph
+      function generateRandomData() {
+        return Array.from({ length: 5 }, () => Math.floor(Math.random() * 100));
+      }
+
+      function createGraph(canvasId) {
+        const ctx = document.getElementById(canvasId).getContext("2d");
+        return new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: ["A", "B", "C", "D", "E"],
+            datasets: [
+              {
+                label: "Graph",
+                data: generateRandomData(),
+                backgroundColor: "rgba(54, 162, 235, 0.2)",
+                borderColor: "rgba(54, 162, 235, 1)",
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      }
+
+      // Function to submit the quiz
+      
+
+      // Create graphs for each option
+      document.querySelectorAll(".option-graph").forEach((graph, index) => {
+        createGraph(graph.id);
+      });
+    </script>
+  </body>
+</html>

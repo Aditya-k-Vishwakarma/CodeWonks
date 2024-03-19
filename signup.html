@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6d4ef9;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"]:hover {
+            background-color:#6d4ef9 ;
+        }
+        input[type="button"] {
+    background-color: #6d4ef9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin-top as needed */
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Signup</h2>
+        <form action="submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="pet_name">Pet Name:</label>
+            <input type="text" id="pet_name" name="pet_name">
+            
+            <label for="age">Age:</label>
+            <select id="age" name="age" required>
+                <option value="">Select</option>
+                <option value="above_18">Above 18</option>
+                <option value="below_18">Below 18</option>
+                <option value="between_20_25">Between 20-25</option>
+                <option value="above_25">Above 25</option>
+                <option value="between_25_45">Between 25-45</option>
+                <option value="above_45">Above 45</option>
+            </select>
+            
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="height">Height (cm):</label>
+            <select id="height" name="height" required>
+                <option value="">Select</option>
+                <option value="above_5_feet">Above 5 feet</option>
+                <option value="lower_than_5_feet">Lower than 5 feet</option>
+                <option value="6_feet_or_larger">6 feet or larger</option>
+            </select>
+            
+            <label for="weight">Weight (kg):</label>
+            <select id="weight" name="weight" required>
+                <option value="">Select</option>
+                <option value="above_30">Above 30 kg</option>
+                <option value="between_30_50">Between 30-50 kg</option>
+                <option value="between_50_80">Between 50-80 kg</option>
+                <option value="above_80">Above 80 kg</option>
+            </select>
+            
+            <label for="blood_group">Blood Group:</label>
+            <select id="blood_group" name="blood_group">
+                <option value="">Select</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            
+            <label for="zodiac_sign">Zodiac Sign:</label>
+            <select id="zodiac_sign" name="zodiac_sign">
+                <option value="">Select</option>
+                <option value="aries">Aries</option>
+                <option value="taurus">Taurus</option>
+                <option value="gemini">Gemini</option>
+                <option value="cancer">Cancer</option>
+                <option value="leo">Leo</option>
+                <option value="virgo">Virgo</option>
+                <option value="libra">Libra</option>
+                <option value="scorpio">Scorpio</option>
+                <option value="sagittarius">Sagittarius</option>
+                <option value="capricorn">Capricorn</option>
+                <option value="aquarius">Aquarius</option>
+                <option value="pisces">Pisces</option>
+            </select>
+            
+            <label for="sleep_hours">Sleep Hours:</label>
+            <select id="sleep_hours" name="sleep_hours" required>
+                <option value="">Select</option>
+                <option value="less_than_6">Less than 6 hours</option>
+                <option value="greater_than_6">Greater than 6 hours</option>
+                <option value="between_5_8">Between 5-8 hours</option>
+            </select>
+            <input type="button" value="Finish" onclick="location.href='next.html';">
+
+            
+        </form>
+    </div>
+</body>
+</html>

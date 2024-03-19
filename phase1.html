@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #6d4ef9;
+        color: #333;
+      }
+      .quiz-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .question {
+        margin-bottom: 20px;
+      }
+      .options {
+        list-style-type: lower-alpha;
+        padding-left: 20px;
+      }
+      .options li {
+        margin-bottom: 10px;
+      }
+      .result {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      button {
+        background-color: #6d4ef9;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #6d4ef9;
+      }
+      input[type="button"] {
+    background-color: #6d4ef9;
+    color: white;
+    position: absolute;
+    left: 520px;
+    bottom: 200;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin-top as needed */
+}
+H1{
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <!-- Questions -->
+      <!-- Question 1 -->
+      <h1>Phase 1 :VASHISTHA</h1>
+      <div class="question" id="question1">
+        <p>1. Which type of perfumes you mostly used?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="Paris" /> Mild</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="London" /> Strong</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="Berlin" /> Flora</label
+              >
+            </li>
+            <li>
+              <label><input type="radio" name="q1" value="Rome" /> didnt Use</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 2 -->
+      <div class="question" id="question2">
+        <p>2.How Often do you cut your Nails ?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="Tokyo" /> Every Week</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="Beijing" /> Every Month</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="Seoul" /> Depends On mood</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="Bangkok" /> Occasionally</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 3 -->
+      <div class="question" id="question3">
+        <p>3. Do you dream at Night while sleeping?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="Pacific" /> Yes</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="Atlantic" />
+                No</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="Indian" /> Not dream but I imagine my future</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="Arctic" /> Not Know Currently</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 4 -->
+      <div class="question" id="question4">
+        <p>4. Do you Smoke or Drink (Any toxic Consuption)?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="Shakespeare" />
+                Mostly Yes</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="Hemingway" />
+                Mostly No</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="Dickens" />Occasionally</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="Twain" /> Quit  a while ago</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 5 -->
+      <div class="question" id="question5">
+        <p>5. What you wear the Most?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label><input type="radio" name="q5" value="Yen" /> T-shirts</label>
+            </li>
+            <li>
+              <label><input type="radio" name="q5" value="Euro" /> Shirts</label>
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="Dollar" /> Depends on Mood</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="Pound" /> Depends on Occasion</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 6 -->
+      <div class="question" id="question6">
+        <p>6. Which language You Communicate Mostly?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q6" value="Leonardo da Vinci" />
+                English</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q6" value="Pablo Picasso" /> Pablo
+                Hindi</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q6" value="Vincent van Gogh" />
+                Hinglish</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q6" value="Michelangelo" />
+                Regional Language</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Question 7 -->
+      <div class="question" id="question7">
+        <p>7. Pick One colour From below Options?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input type="radio" name="q7" value="Albert Einstein" /> 
+                Red</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q7" value="Isaac Newton" /> Isaac
+                Yellow</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q7" value="Galileo Galilei" />
+                Pink</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q7" value="Nikola Tesla" /> Nikola
+              Green</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Add more questions here -->
+      <div class="question" id="question8">
+        <p>8. Would You Like to Click Pictures Of Yourself?</p>
+        <div class="options">
+          <ol>
+            <li>
+              <label
+                ><input
+                  type="radio"
+                  name="q8"
+                  value="Albert Einstein"
+                />Yes</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q8" value="Isaac Newton" />
+                Not at All</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q8" value="Galileo Galilei" />
+                Occasionally</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q8" value="Nikola Tesla" />
+                Shy Infront Of Camera</label
+              >
+              <input type="button" value="START VIKRAMADITYA" onclick="location.href='phase2.html';">
+
+            </li>
+          </ol>
+
+        </div>
+
+      </div>
+    </div>
+
+    
+  </body>
+</html>

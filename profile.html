@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Card</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("bg\ img.png");
+        backdrop-filter:  blur(10px);
+      }
+
+      .profile-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+        position: relative; /* Added for positioning the close button */
+      }
+
+      input[type="button"]  {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #555;
+      }
+
+      .profile-picture {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .profile-picture img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+
+      .profile-info {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .username {
+        margin: 0;
+        font-size: 1.5em;
+      }
+
+      .stats {
+        margin: 5px 0;
+        font-size: 1.1em;
+      }
+
+      .premium-btn {
+        background-color: #6d4ef9;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+      }
+
+      .premium-btn:hover {
+        background-color: #6d4ef9;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="profile-card">
+        <input type="button" value="X" onclick="location.href='indexcopy.html';">
+
+      <div class="profile-picture">
+        <img
+          src="ppimg.png"
+          alt="User Profile Picture"
+        />
+      </div>
+      <div class="profile-info">
+        <h2 class="username">USER IIST</h2>
+        <p class="stats">Attempted test: 0</p>
+        <p class="stats">Previous reports</p>
+        <button class="premium-btn">Get Premium</button>
+      </div>
+    </div>
+  </body>
+</html>
